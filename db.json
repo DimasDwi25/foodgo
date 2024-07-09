@@ -1,14 +1,134 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "admin@admin.com",
+      "password": "123456",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "customer2",
+      "email": "customer2@gmail.com",
+      "password": "12345678",
+      "role": "customer"
+    },
+    {
+      "id": 3,
+      "name": "customer",
+      "email": "customer@gmail.com",
+      "password": "12345678",
+      "role": "customer"
+    },
+    {
+      "id": 4,
+      "name": "dimas",
+      "email": "dwid4503@gmail.com",
+      "password": "12345678",
+      "role": "customer"
+    },
+    {
+      "id": 5,
+      "name": "ratih",
+      "email": "ratihaayy@gmail.com",
+      "password": "123456",
+      "role": "customer"
+    }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
+  "foods": [
+    {
+      "name": "Nasi Goreng",
+      "price": 31000,
+      "description": "Nasi goreng adalah makanan berupa nasi yang digoreng dan dicampur dalam minyak goreng, margarin, atau mentega. Biasanya ditambah dengan kecap manis, bawang merah, bawang putih, asam jawa, lada dan bahan lainnya; seperti telur, daging ayam, dan kerupuk. Ada pula nasi goreng jenis lain yang dibuat bersama dengan ikan asin yang juga populer di seluruh Indonesia.",
+      "image": "https://images.unsplash.com/photo-1647093953000-9065ed6f85ef?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "id": 1
+    },
+    {
+      "name": "Mie Goreng",
+      "price": 24000,
+      "description": "Mi goreng berarti mi yang digoreng adalah hidangan mi yang dimasak dengan digoreng tumis khas Indonesia. Mi goreng juga populer dan juga digemari di Malaysia, dan Singapura. Mi goreng terbuat dari mi kuning yang digoreng dengan sedikit minyak goreng, dan ditambahkan bawang putih, bawang merah, udang serta daging ayam atau daging sapi, irisan bakso, cabai, sayuran, tomat, telur ayam, dan acar. Makanan ini sangat populer dan dapat ditemui di mana-mana di Indonesia, mulai dari pedagang pinggir jalan (kaki lima) sampai restoran mewah. Mi goreng juga dapat ditemukan di warung mamak di Malaysia dan Singapura.",
+      "image": "https://images.unsplash.com/photo-1647093953000-9065ed6f85ef?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "id": 2
+    },
+    {
+      "name": "Sate",
+      "price": 25000,
+      "description": "Sate (bahasa Jawa: ꦱꦠꦺ, translit. sate, KBBI: satai)[9][10] adalah makanan yang terbuat dari daging yang dipotong kecil-kecil dan ditusuk sedemikian rupa dengan tusukan lidi tulang daun kelapa atau bambu, kemudian dipanggang menggunakan bara arang kayu. Sate disajikan dengan berbagai macam bumbu yang bergantung pada variasi resep sate.[11] Daging yang dijadikan sate antara lain daging ayam, kambing, domba, sapi, babi, kelinci, kuda, dan lain-lain.",
+      "image": "https://plus.unsplash.com/premium_photo-1669150852115-38eb25f072e0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "id": 3
+    },
+    {
+      "name": "Es Teh",
+      "price": 5000,
+      "description": "Es teh adalah minuman teh yang disajikan dingin dengan es batu. Biasanya, Es teh seringkali ditambahkan rasa seperti melati, dan buah-buahan seperti lemon, ceri, dan stroberi, atau susu. Es teh adalah minuman yang sering diminum saat siang hari karena suhu udara yang panas. Es teh menjadi minuman utama yang seringkali diminum di beberapa rumah makan di Indonesia, selain air minum.",
+      "image": "https://images.unsplash.com/photo-1499638673689-79a0b5115d87?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "id": 4
+    },
+    {
+      "name": "tes",
+      "price": 12000,
+      "description": "test",
+      "image": "https://www.eatingwell.com/thmb/m5xUzIOmhWSoXZnY-oZcO9SdArQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/article_291139_the-top-10-healthiest-foods-for-kids_-02-4b745e57928c4786a61b47d8ba920058.jpg",
+      "id": 5
+    }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "orders": [
+    {
+      "userId": 2,
+      "foodId": 2,
+      "quantity": 2,
+      "totalPrice": 48000,
+      "status": "pending",
+      "id": 1
+    },
+    {
+      "userId": 2,
+      "foodId": 4,
+      "quantity": 1,
+      "totalPrice": 5000,
+      "status": "pending",
+      "id": 2
+    },
+    {
+      "userId": 3,
+      "foodId": 3,
+      "quantity": 1,
+      "totalPrice": 25000,
+      "status": "pending",
+      "id": 4
+    },
+    {
+      "userId": 4,
+      "foodId": 2,
+      "quantity": 3,
+      "totalPrice": 72000,
+      "status": "pending",
+      "id": 5
+    },
+    {
+      "userId": 4,
+      "foodId": 4,
+      "quantity": 6,
+      "totalPrice": 30000,
+      "status": "Completed",
+      "id": 6
+    },
+    {
+      "userId": 4,
+      "foodId": 1,
+      "quantity": 1,
+      "totalPrice": 31000,
+      "status": "Completed",
+      "id": 7
+    },
+    {
+      "userId": 5,
+      "foodId": 5,
+      "quantity": 1,
+      "totalPrice": 12000,
+      "status": "Completed",
+      "id": 8
+    }
+  ]
 }
